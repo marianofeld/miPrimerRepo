@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Prof. Matemática Mariano Feld</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="imagenes/logotipo.png" alt="logotipo-de-la-pagina">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="contenido.html">Contenidos</a>
+                </li>
+                <li>
+                    <a href="ejercicios.html">Ejercicios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainObjetivo">
+        <h1>¿Queres contactarnos?</h1>
+        <section class="grid">
+            <h2>Completa el formulario</h2>
+            <p class="texto1">Si te quedo alguna duda y/o queres contactarnos a traves de un email, llena el formulario
+            </p>
+            <form action="">
+                <label class="label1" for="name">Nombre: <input id="name" type="text" required
+                        placeholder="Ingresa tu nombre"></label>
+                <br>
+                <label for="email">Email: <input id="email" type="email" required
+                        placeholder="Ingresa tu email"></label>
+                <br>
+                <label for="telefono">Telefono: <input id="telefono" type="tel" required
+                        placeholder="Ingresa tu telefono"></label>
+                <br>
+                <label for="consulta">Contanos sobre tu consulta: <br> <textarea class="textarea" placeholder="Escribi tu consulta"
+                        required name="" id="consulta" cols="30" rows="10"></textarea></label>
+                <br>
+                <div>
+                    <input class="boton1" type="reset" value="Cancelar">
+                    <input class="boton1" type="submit" value="Enviar">
+                </div>
+            </form>
+            <div class="imagenesgrid">
+                <img src="imagenes/aprender-grid.png" alt="imagen de aprender">
+                <div class="imagenesflex">
+                    <img class="i1" src="imagenes/matematica-grid.jpg" alt="imagen de matematica">
+                    <img class="i2" src="imagenes/bart-grid.png" alt="imagen de Bart Simpson">
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2>Evalua tu experiencia y deja un comentario.</h2>
+            <div class="formoak">
+                <form action="experiencia">
+                    <label for="experiencia" for="consulta">Contanos sobre tu experiencia: <br>
+                        <textarea class="textarea" placeholder="contanos sobre tu experiencia" cols="30" rows= "10"> </textarea>
+                    </label>
+                    <div class="reputacion">
+                        <p>Tu experiencia fue: <br> Mala<input type="range">Muy buena</p>
+                    </div>
+                    <div>
+                        <input class="boton1" type="reset" value="Cancelar">
+                        <input class="boton1" type="submit" value="Enviar">
+                    </div>
+                </form>
+                <img src="imagenes/profesor-oak-grid2.png" alt="imagen profesor oak">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h4>Redes sociales:</h4>
+        <div class="imgFooter">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="imagenes/instagram.png" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="facebook"></a>
+            <a href="https://www.discord.com/" target="_blank"><img src="imagenes/discord.png" alt="discord"></a>
+        </div>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();   </script>
+</body>
+
+</html>
