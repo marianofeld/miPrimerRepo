@@ -1,2 +1,0 @@
-# miPrimerRepo
-mi primer repo
