@@ -5,43 +5,44 @@
     margin: 0;
 }
 
-.header{
-display: flex;
-justify-content: space-between;
-background-color: #3d3d3d;   
-align-items: center; 
-position:fixed;
-width: 100%;
+#navMio{
+    background-color: #3d3d3d;   
+    align-items: center;
+    width: 100%;
 }
 
-.header:hover{
-  background-color: #ad4a6c;
-  color: #4abdac;
-  border: 1px solid black;}
 
-.header ul li a:hover{
-    background-color: bisque;
-    color: #4abdac;
-    border: 1px solid black;
-    transition: 1000s all ease-in-ou}
 
-.header nav ul {
-    display: flex;
-}
-.header nav ul li {
-    list-style: none;
+#navLetra{
+    font-size: 2rem
 }
 
-.header nav ul li a {
-    text-decoration: none;
-    font-size: 2rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    color: white;    
+#imgCar{
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
 }
 
-main{
+#imgcard{
+    height: 100%;    
+}
+
+#carouselExampleControls{
+    background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);
+}
+#card-group{
+    background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);
+}
+ main{
     background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);; 
+}
+
+.mainHistoria section h3{
+    color: #7b7dc3;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
 }
 
 .mainIndex h1 {
@@ -49,7 +50,7 @@ main{
     font-size: 80px;
     font-family: 'Oleo Script Swash Caps', cursive;
     color: #e9bd15;
-    padding-top: 8rem;
+    padding: 1rem;
 }
 
 .horizontal{
@@ -176,7 +177,6 @@ main{
     font-family: 'Oleo Script Swash Caps', cursive;
     color: #e9bd15;
     padding: 1rem;
-    padding-top: 8rem
 }
 
 .principal {
@@ -271,7 +271,6 @@ main{
     font-family: 'Oleo Script Swash Caps';
     color: #e9bd15;
     padding: 1rem;
-    padding-top: 8rem
 }
 
 .ejerDiv img{
@@ -297,8 +296,7 @@ main{
     font-size: 5rem;
     font-family: 'Oleo Script Swash Caps';
     color: #e9bd15;
-    padding: 1rem;
-    padding-top: 8rem 
+    padding: 1rem; 
 }
 
 .funciones {
@@ -378,7 +376,7 @@ main{
     font-family: 'Oleo Script Swash Caps';
     color: #e9bd15;
     padding: 1rem;
-    padding-top: 8rem }
+}
 
 .div1 {
     display: flex;
@@ -403,7 +401,6 @@ main{
 .div2 {
     display: flex;
     align-items: center;
-    background-color:#ad4a6c;
 }
     
 .div2 img {
@@ -430,7 +427,8 @@ main{
     font-family: 'Oleo Script Swash Caps';
     text-align: center;
     color: beige;
-    font-size: 4rem;
+    font-size: 5rem;
+    padding-top: 2.5rem;
 }
 
 .div3{
@@ -447,8 +445,8 @@ main{
 
 .div3 img {
     margin: 1rem;
-    height: 200px;
-    width: 200px;
+    height: 60%;
+    width: 60%;
     border: 3px solid black
 }
 
@@ -616,7 +614,6 @@ main{
     }
     .mainIndex h1 {
         font-size: 50px;
-        padding: 0;
     }
     .horizontal img{
         width: 100%;

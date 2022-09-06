@@ -7,33 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prof. Matemática Mariano Feld</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img class="logotipo" src="imagenes/logotipo.png" alt="logotipo-de-la-pagina">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="contenido.html">Contenidos</a>
-                </li>
-                <li>
-                    <a href="ejercicios.html">Ejercicios</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto
-                    </a>
-                </li>
-            </ul>
+    <header>
+        <!-- Inicia Nav -->
+        <nav id="navMio" class="navbar navbar-expand-lg sticky-top m">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./imagenes/logotipo.png" alt="logotipo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse m" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navLetra" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navLetra" href="./contenido.html">Contenido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navLetra" href="./ejercicios.html">Ejercicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navLetra" href="./historia-matematica.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navLetra" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- Termina Nav -->
     </header>
+    <!-- Inicia carrousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="imgCar" src="./imagenes/car1.jpg" class="d-block w-100" alt="imagen de carousel 1">
+            </div>
+            <div class="carousel-item">
+                <img id="imgCar" src="./imagenes/car2.jpg" class="d-block w-100" alt="imagen de carousel 2 ">
+            </div>
+            <div class="carousel-item">
+                <img id="imgCar" src="./imagenes/car3" class="d-block w-100" alt="imagen de carousel 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Fin de carrousel -->
     <main class="mainIndex">
         <h1 class="wow">¿Que es la matematica?</h1>
         <div class="horizontal">
-            <img src="imagenes/imagen-header.jpg" alt="imagen-principal">
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum praesentium quam distinctio
+            <img src="./imagenes/imagen-header.jpg" alt="imagen-principal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum praesentium quam distinctio
                 laudantium eligendi officia odio similique delectus exercitationem quaerat tenetur enim veniam nobis,
                 incidunt quisquam minima sint commodi.</p>
         </div>
@@ -46,10 +87,10 @@
                     <div class="display2">
                         <h3>Online</h3>
                         <div class="imgDisplay">
-                            <img class="resolucion" src="imagenes/classroom.png" alt="icono Classroom">
-                            <img src="imagenes/meet.png" alt="icono Google Meet">
-                            <img src="imagenes/zoom.png" alt="icono Zoom">
-                            <img class="resolucion" src="imagenes/discord.png" alt="icono Discord">
+                            <img class="resolucion" src="./imagenes/classroom.png" alt="icono Classroom">
+                            <img src="./imagenes/meet.png" alt="icono Google Meet">
+                            <img src="./imagenes/zoom.png" alt="icono Zoom">
+                            <img class="resolucion" src="./imagenes/discord.png" alt="icono Discord">
                         </div>
                     </div>
                     <p class="textoOnline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, doloribus
@@ -65,7 +106,7 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque similique quis <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque similique quis <br>
                     officia blanditiis corrupti facilis illum animi minima, asperiores deserunt molestias aliquid
                     quibusdam? <br> Corrupti, mollitia aliquam animi quisquam magnam aut.</p>
             </article>
@@ -81,8 +122,12 @@
             <a href="https://www.discord.com/" target="_blank">
                 <img src="imagenes/discord.png" alt="discord"></a>
         </div>
-    <script src="js/wow.min.js"></script>
-    <script> new WOW().init();   </script>
+        <script src="js/wow.min.js"></script>
+        <script> new WOW().init();   </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
 </body>
 
 </html>

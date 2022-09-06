@@ -5,59 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Prof. Matemática Mariano Feld</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img src="imagenes/logotipo.png" alt="logotipo-de-la-pagina">
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="contenido.html">Contenidos</a>
-                </li>
-                <li>
-                    <a href="ejercicios.html">Ejercicios</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Inicia Nav -->
+    <nav id="navMio" class="navbar navbar-expand-lg sticky-top m">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./imagenes/logotipo.png" alt="logotipo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse m" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="navLetra" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="navLetra" href="./contenido.html">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="navLetra" href="./ejercicios.html">Ejercicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="navLetra" href="./historia-matematica.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="navLetra" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Termina Nav -->
     <main class="mainObjetivo">
         <h1>¿Queres contactarnos?</h1>
         <section class="grid">
             <h2>Completa el formulario</h2>
             <p class="texto1">Si te quedo alguna duda y/o queres contactarnos a traves de un email, llena el formulario
             </p>
-            <form action="">
-                <label class="label1" for="name">Nombre: <input id="name" type="text" required
-                        placeholder="Ingresa tu nombre"></label>
-                <br>
-                <label for="email">Email: <input id="email" type="email" required
-                        placeholder="Ingresa tu email"></label>
-                <br>
-                <label for="telefono">Telefono: <input id="telefono" type="tel" required
-                        placeholder="Ingresa tu telefono"></label>
-                <br>
-                <label for="consulta">Contanos sobre tu consulta: <br> <textarea class="textarea" placeholder="Escribi tu consulta"
-                        required name="" id="consulta" cols="30" rows="10"></textarea></label>
-                <br>
+                <!-- Inicia Formulario -->
+                <form action="">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ingrese nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Telefono:</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese Numero de telefono">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Contanos sobre tu consulta:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <!-- Termina Formulario -->
+                  </div>
                 <div>
                     <input class="boton1" type="reset" value="Cancelar">
                     <input class="boton1" type="submit" value="Enviar">
                 </div>
             </form>
             <div class="imagenesgrid">
-                <img src="imagenes/aprender-grid.png" alt="imagen de aprender">
+                <img src="./imagenes/aprender-grid.png" alt="imagen de aprender">
                 <div class="imagenesflex">
-                    <img class="i1" src="imagenes/matematica-grid.jpg" alt="imagen de matematica">
-                    <img class="i2" src="imagenes/bart-grid.png" alt="imagen de Bart Simpson">
+                    <img class="i1" src="./imagenes/matematica-grid.jpg" alt="imagen de matematica">
+                    <img class="i2" src="./imagenes/bart-grid.png" alt="imagen de Bart Simpson">
                 </div>
             </div>
         </section>
@@ -76,22 +96,22 @@
                         <input class="boton1" type="submit" value="Enviar">
                     </div>
                 </form>
-                <img src="imagenes/profesor-oak-grid2.png" alt="imagen profesor oak">
+                <img src="./imagenes/profesor-oak-grid2.png" alt="imagen profesor oak">
             </div>
         </section>
     </main>
     <footer class="footer">
         <h4>Redes sociales:</h4>
         <div class="imgFooter">
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="imagenes/instagram.png" alt="instagram">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" alt="facebook"></a>
-            <a href="https://www.discord.com/" target="_blank"><img src="imagenes/discord.png" alt="discord"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/instagram.png" alt="instagram">            </a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./imagenes/facebook.png" alt="facebook"></a>
+            <a href="https://www.discord.com/" target="_blank"><img src="./imagenes/discord.png" alt="discord"></a>
         </div>
     </footer>
     <script src="js/wow.min.js"></script>
-    <script> new WOW().init();   </script>
+        <script> new WOW().init();   </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
-
 </html>
