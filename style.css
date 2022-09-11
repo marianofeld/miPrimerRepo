@@ -11,10 +11,13 @@
     width: 100%;
 }
 
-
-
 #navLetra{
     font-size: 2rem
+}
+
+#navLetra:hover{
+    border: solid 2px black;
+    background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c)
 }
 
 #imgCar{
@@ -33,7 +36,7 @@
 #card-group{
     background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);
 }
- main{
+main{
     background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);; 
 }
 
@@ -67,7 +70,6 @@
     font-family: verdana;
     padding-left: 1rem;
 }
-
 
 .parrafocenter{
     text-align: center;
@@ -313,7 +315,7 @@
 }
 
 .funciones h2 {
-    animation: flash;
+    animation: pulse;
     animation-duration: 30s;
     animation-delay:0;
     font-family: 'Oleo Script Swash Caps';
@@ -376,6 +378,10 @@
     font-family: 'Oleo Script Swash Caps';
     color: #e9bd15;
     padding: 1rem;
+    animation: bounce;
+    animation-duration: 30s;
+    animation-delay:0;
+
 }
 
 .div1 {
@@ -554,7 +560,8 @@
         width: 100%;
     }
     .formoak img {
-        display: none;}
+        display: none;
+    }
     .grid{
         display: flex;
         flex-direction: column;
@@ -578,6 +585,7 @@
     }
 }
 
+
 @media(max-width: 720px){
     .horizontal{
         flex-direction: column;
@@ -589,7 +597,7 @@
     .mainObjetivo h1 {
         font-size: 5rem;
 }
-}
+
 @media(max-width: 540px){
     .header{
         flex-direction: column;   
@@ -605,6 +613,8 @@
     }
     .mainHistoria h1{
         padding-top: 15rem;
+        animation: heartBeat;
+        animation-duration: 30s;
     }
 
 }
@@ -659,6 +669,7 @@
         max-width: 220px
     }
     }
+ }
     
 
 
