@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+#navMio {
+  background-color: #3d3d3d;
+  align-items: center;
+  width: 100%;
+}
+
+#navLetra {
+  font-size: 2rem;
+}
+#navLetra:hover {
+  border: solid 2px black;
+  background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);
+}
+
+#imgCar {
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+}
+
+#imgcard {
+  height: 100%;
+}
+
+#carouselExampleControls {
+  background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);
+}
+
+#card-group {
+  background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);
+}
+
+main {
+  background-image: linear-gradient(to right top, #ffe4c4, #e8dcb2, #ccd6a5, #accfa0, #87c8a1, #5ec0ae, #30b6be, #00aacb, #4396d2, #7b7dc3, #a1619e, #ad4a6c);
+}
+
+.mainIndex h1 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #e9bd15;
+  padding: 1rem;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.horizontal img {
+  border: 2px solid brown;
+}
+.horizontal p {
+  font-size: 1.5rem;
+  font-family: letraP;
+  padding-left: 1rem;
+}
+
+.parrafocenter {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.textoOnline {
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.indexSection h2 {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+  color: beige;
+  font-size: 60px;
+  padding-bottom: 1rem;
+}
+
+.imgDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgDisplay img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.display2 {
+  display: flex;
+  padding-right: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  width: 40%;
+}
+.display2 h3 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+  color: #7b7dc3;
+  font-size: 50px;
+}
+
+.display {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 2rem;
+}
+.mapa h3 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+  color: beige;
+  font-size: 50px;
+}
+.mapa p {
+  font-size: 1.5rem;
+  font-family: verdana;
+  padding-right: 1rem;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vertical h3 {
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+  color: #7b7dc3;
+  font-size: 50px;
+}
+
+.footer {
+  display: flex;
+  background-color: #3d3d3d;
+  justify-content: right;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: "Oleo Script Swash Caps", cursive;
+  padding-right: 0.5rem;
+}
+.footer a img {
+  height: 70px;
+  width: 70px;
+  margin-right: 0.3rem;
+  margin-left: 0.7rem;
+  border: 2px solid black;
+  margin-top: 0.8rem;
+}
+
+.mainObjetivo h1 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #e9bd15;
+  padding: 1rem;
+}
+.mainObjetivo section h2 {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+  color: beige;
+  font-size: sizeh2;
+  padding: 2rem;
+}
+.mainObjetivo section p {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+}
+.principal img {
+  border: 3px solid black;
+}
+.principal section h2 {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+  color: beige;
+  font-size: 60px;
+  padding: 2rem;
+}
+.principal section p {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+.principal section form label {
+  font-size: 1.8rem;
+  padding-left: 1.5rem;
+}
+
+.separado {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-family: letraP;
+}
+
+.reputacion {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.boton1 {
+  font-size: 1rem;
+  margin-left: 1.8rem;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 1.2rem;
+  border: 3px solid black;
+}
+
+.boton1:hover {
+  background-color: black;
+  color: white;
+  border: 3px solid red;
+}
+
+.mainEjercicios {
+  background-color: bisque;
+}
+
+.ejerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ejerDiv h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Oleo Script Swash Caps";
+  color: #e9bd15;
+  padding: 1rem;
+}
+
+.ejerDiv img {
+  height: 300px;
+  width: 500px;
+  border: 3px solid #ad4a6c;
+  margin-bottom: 1rem;
+}
+
+.mainEjercicios p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.mainEjercicios p a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #FFC000;
+}
+
+.mainContenido h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Oleo Script Swash Caps";
+  color: #e9bd15;
+  padding: 1rem;
+}
+
+.funciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.mainFunciones {
+  display: flex;
+  align-items: center;
+}
+
+.funciones h2 {
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  font-family: "Oleo Script Swash Caps";
+  text-align: center;
+  color: beige;
+  font-size: 4rem;
+}
+
+.mainFunciones p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.funciones img {
+  height: 300px;
+  width: 350px;
+  border: 3px solid black;
+}
+
+.algebra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.mainAlgebra {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.mainAlgebra p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.algebra h2 {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  font-family: "Oleo Script Swash Caps";
+  text-align: center;
+  color: beige;
+  font-size: 4rem;
+}
+
+.algebra img {
+  height: 300px;
+  width: 350px;
+  border: 3px solid black;
+}
+
+.mainHistoria h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Oleo Script Swash Caps";
+  color: #e9bd15;
+  padding: 1rem;
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.mainHistoria section h3 {
+  color: #7b7dc3;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.div1 img {
+  margin: 1rem;
+  height: 90%;
+  width: 90%;
+  border: 3px solid black;
+}
+
+.div1 p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+}
+
+.div2 img {
+  margin: 1rem;
+  height: 90%;
+  width: 90%;
+  border: 3px solid black;
+}
+
+.div2 p {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.mainHistoria h2:hover {
+  background-color: brown;
+  color: black;
+}
+
+.mainHistoria h2 {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  font-family: "Oleo Script Swash Caps";
+  text-align: center;
+  color: beige;
+  font-size: 5rem;
+  padding-top: 2.5rem;
+}
+
+.div3 {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.div3 p {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: verdana;
+}
+
+.div3 img {
+  margin: 1rem;
+  height: 60%;
+  width: 60%;
+  border: 3px solid black;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "titulo titulo" "parrafo parrafo" "formulario imagenes";
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.grid h2 {
+  -webkit-animation: flash;
+          animation: flash;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  grid-area: titulo;
+}
+
+.grid p {
+  grid-area: parrafo;
+}
+
+.grid form {
+  grid-area: formulario;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagenesgrid {
+  grid-area: imagenes;
+  display: flex;
+  justify-content: right;
+}
+
+.imagenesgrid img {
+  height: 35rem;
+  width: 35rem;
+}
+
+.imagenesflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenesflex img {
+  height: 15rem;
+  width: 30rem;
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+.formoak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formoak form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formoak form input {
+  margin: 1rem;
+  align-items: center;
+}
+
+.formoak img {
+  height: 35rem;
+  width: 30rem;
+}
+
+/* --------- Media Query ----------- */
+@media (max-width: 1616px) {
+  .imagenesflex {
+    display: none;
+  }
+  .imagenesgrid img {
+    height: 70%;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .mapa {
+    flex-direction: column;
+  }
+  .vertical {
+    padding-bottom: 1.5rem;
+  }
+  .mainFunciones {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainAlgebra {
+    flex-direction: column;
+  }
+  .formoak {
+    width: 100%;
+  }
+  .formoak img {
+    display: none;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .div1 {
+    flex-direction: column-reverse;
+  }
+  .div1 img {
+    width: 50%;
+    height: 50%;
+  }
+  .div2 {
+    flex-direction: column-reverse;
+  }
+  .div2 img {
+    width: 50%;
+    height: 50%;
+  }
+  .div3 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  .horizontal {
+    flex-direction: column;
+  }
+  .vertical iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .mainObjetivo h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 720px) and (max-width: 540px) {
+  .header {
+    flex-direction: column;
+  }
+  .header nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .ejerDiv img {
+    height: 90%;
+    width: 90%;
+  }
+  .mainHistoria h1 {
+    padding-top: 15rem;
+    -webkit-animation: heartBeat;
+            animation: heartBeat;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+  }
+}
+@media (max-width: 720px) and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+  }
+  .mainIndex h1 {
+    font-size: 50px;
+  }
+  .horizontal img {
+    width: 100%;
+  }
+  .horizontal {
+    padding: 0;
+  }
+  .display {
+    flex-direction: column;
+  }
+  .textoOnline {
+    padding: 2rem;
+  }
+  .ejerDiv h1 {
+    font-size: 3.5rem;
+  }
+  .mainContenido h1 {
+    font-size: 3.5rem;
+  }
+  .funciones img {
+    height: 95%;
+    width: 95%;
+  }
+  .algebra img {
+    height: 80%;
+    width: 80%;
+  }
+  .mainObjetivo h1 {
+    font-size: 3.5rem;
+  }
+  .indexSection h2 {
+    font-size: 2.8rem;
+    padding-bottom: 10rem;
+  }
+  .mainObjetivo section form label input {
+    width: 200px;
+  }
+  .mainHistoria h1 {
+    font-size: 4rem;
+  }
+  .mainHistoria section h2 {
+    font-size: 3.5rem;
+  }
+  .textarea {
+    max-width: 220px;
+  }
+}/*# sourceMappingURL=main.css.map */
