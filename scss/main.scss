@@ -88,8 +88,6 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
-
 }
 
 .imgDisplay img {
@@ -191,13 +189,13 @@ main {
         color: $color3;
         font-size: sizeh2;
         padding: 2rem;
-    }
+        }
         p {
         padding-left: $medidaEstandar;
         font-size: $sizeP;
         font-family: $letraP;
+        }
     }
-}
 }
 
 .principal {
@@ -244,11 +242,12 @@ main {
                 margin-top: $medidaEstandar;
                 width: 400px;
             }
-    }
+        }
+}
 }
 
 .separado {
-    padding-left: 1rem;
+    padding-left: $medidaEstandar;
     font-size: 1.5rem;
     font-family: letraP;
 }
@@ -270,7 +269,7 @@ main {
     background-color: black;
     color: white;
     border: 3px solid red;
-}
+    }
 }
 
 .mainEjercicios {
@@ -320,67 +319,61 @@ main {
     flex-direction: column;
     align-items: center;
     margin-left: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: $medidaEstandar;
+    h2 {
+        animation: pulse;
+        animation-duration: 30s;
+        animation-delay: 0;
+        font-family: $letrah;
+        text-align: center;
+        color: $color3;
+        font-size: 4rem;
+    }
+    img {
+        height: 300px;
+        width: 350px;
+        border: 3px solid black
+    }
 }
 
 .mainFunciones {
     display: flex;
     align-items: center;
+    p {
+        padding-left: $medidaEstandar;
+        padding-bottom: $medidaEstandar;
+        font-size: 1.5rem;
+        font-family: $letraP;
+    }
 }
-
-.funciones h2 {
-    animation: pulse;
-    animation-duration: 30s;
-    animation-delay: 0;
-    font-family: 'Oleo Script Swash Caps';
-    text-align: center;
-    color: beige;
-    font-size: 4rem;
-}
-
-.mainFunciones p {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
-    font-family: verdana;
-}
-
-.funciones img {
-    height: 300px;
-    width: 350px;
-    border: 3px solid black
-}
-
 
 .algebra {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: $medidaEstandar;
+    h2 {
+        animation: flash;
+        animation-duration: 30s;
+        animation-delay: 0;
+        font-family: $letrah;
+        text-align: center;
+        color: $color3;
+        font-size: $sizeh2;
+    }    
 }
 
 .mainAlgebra {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-}
-
-.mainAlgebra p {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
-    font-family: verdana;
-}
-
-.algebra h2 {
-    animation: flash;
-    animation-duration: 30s;
-    animation-delay: 0;
-    font-family: 'Oleo Script Swash Caps';
-    text-align: center;
-    color: beige;
-    font-size: 4rem;
+    p {
+        padding-left: $medidaEstandar;
+        padding-bottom: $medidaEstandar;
+        font-size: $sizeP;
+        font-family: $letraP;
+    }
 }
 
 .algebra img {
@@ -389,99 +382,92 @@ main {
     border: 3px solid black
 }
 
-.mainHistoria h1 {
+.mainHistoria {
+    h1 {
     text-align: center;
-    font-size: 5rem;
-    font-family: 'Oleo Script Swash Caps';
-    color: #e9bd15;
-    padding: 1rem;
+    font-size: $sizeh1;
+    font-family: $letrah;
+    color: $color1;
+    padding: $medidaEstandar;
     animation: bounce;
     animation-duration: 30s;
     animation-delay: 0;
-
-}
-
-.mainHistoria section h3 {
-    color: #7b7dc3;
-    font-size: 4rem;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    }
+    h2 {
+        animation: flash;
+        animation-duration: 30s;
+        animation-delay: 0;
+        font-family: $letrah;
+        text-align: center;
+        color: $color3;
+        font-size: $letrah2;
+        padding-top: 2.5rem;
+        &:hover {
+            background-color: brown;
+            color: black
+        }
+    }  
+    section h3 {
+        color: $color2;
+        font-size: $sizeh3;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .div1 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-}
-
-.div1 img {
-    margin: 1rem;
-    height: 90%;
-    width: 90%;
-    border: 3px solid black
-}
-
-.div1 p {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
-    font-family: verdana;
+    img {
+        margin: $medidaEstandar;
+        height: 90%;
+        width: 90%;
+        border: 3px solid black
+    }
+    p {
+        padding-left: $medidaEstandar;
+        padding-bottom: $medidaEstandar;
+        font-size: $sizeP;
+        font-family: $letraP;
+    }
+    
 }
 
 .div2 {
     display: flex;
     align-items: center;
-}
-
-.div2 img {
-    margin: 1rem;
-    height: 90%;
-    width: 90%;
-    border: 3px solid black
-}
-
-.div2 p {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-family: verdana;
-}
-
-.mainHistoria h2:hover {
-    background-color: brown;
-    color: black
-}
-
-.mainHistoria h2 {
-    animation: flash;
-    animation-duration: 30s;
-    animation-delay: 0;
-    font-family: 'Oleo Script Swash Caps';
-    text-align: center;
-    color: beige;
-    font-size: 5rem;
-    padding-top: 2.5rem;
+    img {
+        margin: 1rem;
+        height: 90%;
+        width: 90%;
+        border: 3px solid black
+    }
+    p {
+        margin-left: $medidaEstandar;
+        margin-bottom: $medidaEstandar;
+        font-size: 1.5rem;
+        font-family: $letraP;
+    }
 }
 
 .div3 {
     display: flex;
     align-items: center;
-    padding: 1rem;
-}
-
-.div3 p {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-family: verdana;
-}
-
-.div3 img {
-    margin: 1rem;
-    height: 60%;
-    width: 60%;
-    border: 3px solid black
+    padding: $medidaEstandar;
+    p {
+        margin-left: $medidaEstandar;
+        margin-bottom: $medidaEstandar;
+        font-size: $sizeP;
+        font-family: $letraP;
+    }
+    img {
+        margin: $medidaEstandar;
+        height: 60%;
+        width: 60%;
+        border: 3px solid black;
+    }
 }
 
 
@@ -493,69 +479,62 @@ main {
         "formulario imagenes";
     padding: 1rem;
     gap: 1rem;
-}
-
-.grid h2 {
-    animation: flash;
-    animation-duration: 30s;
-    animation-delay: 0;
-    grid-area: titulo;
-}
-
-.grid p {
-    grid-area: parrafo;
-}
-
-.grid form {
-    grid-area: formulario;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    h2 {
+        animation: flash;
+        animation-duration: 30s;
+        animation-delay: 0;
+        grid-area: titulo;
+    }
+    p {
+        grid-area: parrafo;
+    }
+    form {
+        grid-area: formulario;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .imagenesgrid {
     grid-area: imagenes;
     display: flex;
     justify-content: right;
-}
-
-.imagenesgrid img {
-    height: 35rem;
-    width: 35rem;
+    img {
+        height: 35rem;
+        width: 35rem;
+    }
 }
 
 .imagenesflex {
     display: flex;
     flex-direction: column;
-}
-
-.imagenesflex img {
-    height: 15rem;
-    width: 30rem;
-    padding-left: 4rem;
-    padding-top: 1rem;
+    img {
+        height: 15rem;
+        width: 30rem;
+        padding-left: 4rem;
+        padding-top: $medidaEstandar;
+    }
 }
 
 .formoak {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.formoak form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.formoak form input {
-    margin: 1rem;
-    align-items: center;
-}
-
-.formoak img {
-    height: 35rem;
-    width: 30rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            margin: $medidaEstandar;
+            align-items: center;
+        }
+    }
+    img {
+        height: 35rem;
+        width: 30rem;
+    }
+    
 }
 
 /* --------- Media Query ----------- */
