@@ -190,116 +190,116 @@ main {
     }
 }
 
-    .principal {
-        display: flex;
-        align-items: center;
-        padding-left: 0.5rem;
-        padding-bottom: $medidaEstandar;
+.principal {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-bottom: $medidaEstandar;
 
-        img {
-            border: 3px solid black
+    img {
+        border: 3px solid black
+    }
+
+    section {
+        h2 {
+            animation: flash;
+            animation-duration: 30s;
+            animation-delay: 0;
+            @include textos($sizeh2, $letrah, $color3);
+            text-align: center;
+            padding: 2rem;
         }
 
-        section {
-            h2 {
-                animation: flash;
-                animation-duration: 30s;
-                animation-delay: 0;
-                @include textos($sizeh2, $letrah, $color3);
-                text-align: center;
-                padding: 2rem;
-            }
-
-            p {
-                padding-left: $medidaEstandar;
-                @extend .textoOnline;
-            }
-
-            form label {
-                font-size: $sizeF;
-                padding-left: 1.5rem;
-
-                input {
-                    height: 1.1rem;
-                    border-radius: 1.3rem;
-                    border: 3px solid black;
-                    width: 300px;
-                }
-
-                textarea {
-                    height: 300px;
-                    border-radius: 1.2rem;
-                    border: 3px solid black;
-                    margin-left: 1.5rem;
-                    margin-top: $medidaEstandar;
-                    width: 400px;
-                }
-            }
-        }
-    }
-
-    .separado {
-        @include textos($sizeP, $letraP, black);
-    }
-
-    .reputacion {
-        margin-left: 15px;
-        margin-top: 20px;
-    }
-
-    .boton1 {
-        font-size: $medidaEstandar;
-        margin-left: 1.8rem;
-        margin-top: 0.5rem;
-        height: 2rem;
-        width: 10rem;
-        border-radius: 1.2rem;
-        border: 3px solid black;
-
-        &:hover {
-            background-color: black;
-            color: white;
-            border: 3px solid red;
-        }
-    }
-
-    .mainEjercicios {
         p {
-            padding-bottom: $medidaEstandar;
+            padding-left: $medidaEstandar;
             @extend .textoOnline;
+        }
 
-            a {
-                font-size: 2rem;
-                text-decoration: none;
-                color: $color1;
+        form label {
+            font-size: $sizeF;
+            padding-left: 1.5rem;
+
+            input {
+                height: 1.1rem;
+                border-radius: 1.3rem;
+                border: 3px solid black;
+                width: 300px;
+            }
+
+            textarea {
+                height: 300px;
+                border-radius: 1.2rem;
+                border: 3px solid black;
+                margin-left: 1.5rem;
+                margin-top: $medidaEstandar;
+                width: 400px;
             }
         }
+    }
+}
 
-        h1 {
-            text-align: center;
-            @include textos($sizeh1, $letrah, $color1);
-            padding: $medidaEstandar;
+.separado {
+    @include textos($sizeP, $letraP, black);
+}
+
+.reputacion {
+    margin-left: 15px;
+     margin-top: 20px;
+}
+
+.boton1 {
+    font-size: $medidaEstandar;
+    margin-left: 1.8rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 1.2rem;
+    border: 3px solid black;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid red;
+    }
+}
+
+.mainEjercicios {
+    p {
+        padding-bottom: $medidaEstandar;
+        @extend .textoOnline;
+
+        a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: $color1;
         }
     }
 
-    .ejerDiv {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1 {
-            text-align: center;
-            @include textos($sizeh1, $letrah, $color1);
-            padding: $medidaEstandar;
-        }
-
-        img {
-            height: 300px;
-            width: 500px;
-            border: 3px solid #ad4a6c;
-            margin-bottom: $medidaEstandar;
-        }
+    h1 {
+        text-align: center;
+        @include textos($sizeh1, $letrah, $color1);
+        padding: $medidaEstandar;
     }
+}
+
+.ejerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        @include textos($sizeh1, $letrah, $color1);
+        padding: $medidaEstandar;
+    }
+
+    img {
+        height: 300px;
+        width: 500px;
+        border: 3px solid #ad4a6c;
+        margin-bottom: $medidaEstandar;
+    }
+}
 
 .mainContenido {
     h1 {
@@ -308,227 +308,228 @@ main {
         padding: $medidaEstandar;
     }
 }
-    .funciones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 1.5rem;
-        padding-bottom: $medidaEstandar;
 
-        h2 {
-            animation: pulse;
-            animation-duration: 30s;
-            animation-delay: 0;
-            @include textos($sizeh2, $letrah, $color3);
-            text-align: center;
+.funciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5rem;
+    padding-bottom: $medidaEstandar;
 
-        }
+    h2 {
+        animation: pulse;
+        animation-duration: 30s;
+        animation-delay: 0;
+        @include textos($sizeh2, $letrah, $color3);
+        text-align: center;
 
-        img {
-            height: 300px;
-            width: 350px;
-            border: 3px solid black
-        }
     }
 
-    .mainFunciones {
-        display: flex;
-        align-items: center;
-
-        p {
-            padding-bottom: $medidaEstandar;
-            @extend .textoOnline;
-        }
-    }
-
-    .algebra {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 1.5rem;
-        padding-bottom: $medidaEstandar;
-
-        h2 {
-            animation: flash;
-            animation-duration: 30s;
-            animation-delay: 0;
-            text-align: center;
-            @include textos($sizeh2, $letrah, $color3);
-        }
-    }
-
-    .mainAlgebra {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-
-        p {
-            padding-bottom: $medidaEstandar;
-            @extend .textoOnline;
-        }
-    }
-
-    .algebra img {
+    img {
         height: 300px;
         width: 350px;
         border: 3px solid black
     }
+}
 
-    .mainHistoria {
-        h1 {
-            text-align: center;
-            @include textos($sizeh1, $letrah, $color1);
-            padding: $medidaEstandar;
-            animation: bounce;
-            animation-duration: 30s;
-            animation-delay: 0;
-        }
+.mainFunciones {
+    display: flex;
+    align-items: center;
 
-        h2 {
-            animation: flash;
-            animation-duration: 30s;
-            animation-delay: 0;
-            @include textos($sizeh2, $letrah, $color3);
-            text-align: center;
-            padding-top: 2.5rem;
-
-            &:hover {
-                background-color: brown;
-                color: black
-            }
-        }
-
-        section h3 {
-            @include textos($sizeh3, $letrah, $color2);
-            text-align: center;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
+    p {
+        padding-bottom: $medidaEstandar;
+        @extend .textoOnline;
     }
+}
 
-    .div1 {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+.algebra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5rem;
+    padding-bottom: $medidaEstandar;
 
-        img {
-            margin: $medidaEstandar;
-            height: 90%;
-            width: 90%;
-            border: 3px solid black
-        }
-
-        p {
-            padding-bottom: $medidaEstandar;
-            @extend .textoOnline;
-        }
-
+    h2 {
+        animation: flash;
+        animation-duration: 30s;
+        animation-delay: 0;
+        text-align: center;
+        @include textos($sizeh2, $letrah, $color3);
     }
+}
 
-    .div2 {
-        display: flex;
-        align-items: center;
+.mainAlgebra {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 
-        img {
-            margin: 1rem;
-            height: 90%;
-            width: 90%;
-            border: 3px solid black
-        }
-
-        p {
-            margin-bottom: $medidaEstandar;
-            @extend .textoOnline;
-        }
+    p {
+        padding-bottom: $medidaEstandar;
+        @extend .textoOnline;
     }
+}
 
-    .div3 {
-        display: flex;
-        align-items: center;
+.algebra img {
+    height: 300px;
+    width: 350px;
+    border: 3px solid black
+}
+
+.mainHistoria {
+    h1 {
+        text-align: center;
+        @include textos($sizeh1, $letrah, $color1);
         padding: $medidaEstandar;
+        animation: bounce;
+        animation-duration: 30s;
+        animation-delay: 0;
+    }
 
-        p {
-            margin-bottom: $medidaEstandar;
-            @extend .textoOnline;
-        }
+    h2 {
+        animation: flash;
+        animation-duration: 30s;
+        animation-delay: 0;
+        @include textos($sizeh2, $letrah, $color3);
+        text-align: center;
+        padding-top: 2.5rem;
 
-        img {
-            margin: $medidaEstandar;
-            height: 60%;
-            width: 60%;
-            border: 3px solid black;
+        &:hover {
+            background-color: brown;
+            color: black
         }
     }
 
+    section h3 {
+        @include textos($sizeh3, $letrah, $color2);
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
 
-    .grid {
-        display: grid;
-        grid-template-areas:
-            "titulo titulo"
-            "parrafo parrafo"
-            "formulario imagenes";
-        padding: 1rem;
-        gap: 1rem;
+.div1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 
-        h2 {
-            animation: flash;
-            animation-duration: 30s;
-            animation-delay: 0;
-            grid-area: titulo;
-        }
-
-        p {
-            grid-area: parrafo;
-        }
-
-        form {
-            grid-area: formulario;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    img {
+        margin: $medidaEstandar;
+        height: 90%;
+        width: 90%;
+        border: 3px solid black
     }
 
-    .imagenesgrid {
-        grid-area: imagenes;
-        display: flex;
-        justify-content: right;
-
-        img {
-            height: 35rem;
-            width: 35rem;
-        }
+    p {
+        padding-bottom: $medidaEstandar;
+        @extend .textoOnline;
     }
 
-    .imagenesflex {
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin: 1rem;
+        height: 90%;
+        width: 90%;
+        border: 3px solid black
+    }
+
+    p {
+        margin-bottom: $medidaEstandar;
+        @extend .textoOnline;
+    }
+}
+
+.div3 {
+    display: flex;
+    align-items: center;
+    padding: $medidaEstandar;
+
+    p {
+        margin-bottom: $medidaEstandar;
+        @extend .textoOnline;
+    }
+
+    img {
+        margin: $medidaEstandar;
+        height: 60%;
+        width: 60%;
+        border: 3px solid black;
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "parrafo parrafo"
+        "formulario imagenes";
+    padding: 1rem;
+    gap: 1rem;
+
+    h2 {
+        animation: flash;
+        animation-duration: 30s;
+        animation-delay: 0;
+        grid-area: titulo;
+    }
+
+    p {
+        grid-area: parrafo;
+    }
+
+    form {
+        grid-area: formulario;
         display: flex;
         flex-direction: column;
-
-        img {
-            height: 15rem;
-            width: 30rem;
-            padding-left: 4rem;
-            padding-top: $medidaEstandar;
-        }
+        align-items: center;
     }
+}
 
-    .formoak {
-        @include flex(flex, center, center);
+.imagenesgrid {
+    grid-area: imagenes;
+    display: flex;
+    justify-content: right;
 
-        form {
-            display: flex;
-            flex-direction: column;
+    img {
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+.imagenesflex {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        height: 15rem;
+        width: 30rem;
+        padding-left: 4rem;
+        padding-top: $medidaEstandar;
+    }
+}
+
+.formoak {
+    @include flex(flex, center, center);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            margin: $medidaEstandar;
             align-items: center;
-
-            input {
-                margin: $medidaEstandar;
-                align-items: center;
-            }
         }
-
-        img {
-            height: 35rem;
-            width: 30rem;
-        }
-
     }
+
+    img {
+        height: 35rem;
+        width: 30rem;
+    }
+
+}
