@@ -1,0 +1,709 @@
+@import "_variables.scss";
+
+@mixin textos ($size, $letra, $color) {
+    font-size: $size;
+    font-family: $letra;
+    color: $color;
+}
+
+@mixin flex ($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+#navMio {
+    background-color: $colorNav;
+    align-items: center;
+}
+
+#navLetra {
+    font-size: 2rem;
+
+    &:hover {
+        @extend main;
+        border: solid 2px black;
+    }
+}
+
+#imgCar {
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+#imgcard {
+    height: 100%;
+}
+
+#carouselExampleControls {
+    @extend main;
+}
+
+#card-group {
+    @extend main;
+}
+
+main {
+    background-image: $colorFondo
+}
+
+.mainIndex h1 {
+    @include textos($sizeh1, $letrah, $color1);
+    text-align: center;
+    padding: $medidaEstandar;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center;
+    padding-left: $medidaEstandar;
+
+    img {
+        border: 2px solid brown
+    }
+
+    p {
+        @include textos($sizeP, $letraP, black);
+        padding-left: $medidaEstandar;
+    }
+}
+
+.textoOnline {
+    @include textos($sizeP, $letraP, black);
+    padding-left: 1rem;
+}
+
+.parrafocenter {
+    @include textos($sizeP, $letraP, black);
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+
+.indexSection h2 {
+    animation: flash;
+    animation-duration: 5s;
+    animation-delay: 0;
+    text-align: center;
+    @include textos($sizeh2, $letrah, $color3);
+    padding-bottom: $medidaEstandar ;
+}
+
+.imgDisplay {
+    @include flex(flex, center, center);
+    flex-wrap: wrap;
+}
+
+.imgDisplay img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.display2 {
+    @include flex(flex, center, left);
+    padding-right: $medidaEstandar;
+    flex-direction: column;
+    width: 40%;
+
+    h3 {
+        @include textos($sizeh3, $letrah, $color2);
+        text-align: center;
+    }
+}
+
+.display {
+    @include flex(flex, center, left);
+    width: 100%;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 2rem;
+
+    h3 {
+        @include textos($sizeh3, $letrah, $color2);
+    }
+
+    p {
+        @include textos($sizeP, $letraP, black);
+        padding-right: $medidaEstandar;
+    }
+}
+
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        @include textos($sizeh3, $letrah, $color2);
+        text-align: center;
+    }
+}
+
+.footer {
+    @include flex(flex, center, right);
+    background-color: $colorNav;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: $letrah;
+    padding-right: 0.5rem;
+
+    a img {
+        height: 70px;
+        width: 70px;
+        margin-right: 0.3rem;
+        margin-left: 0.7rem;
+        border: 2px solid black;
+        margin-top: 0.8rem;
+    }
+}
+
+.mainObjetivo {
+    h1 {
+        text-align: center;
+        @include textos($sizeh1, $letrah, $color1);
+        padding: 1rem;
+    }
+
+    section {
+        h2 {
+            -webkit-animation: flash;
+            animation: flash;
+            -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+            -webkit-animation-delay: 0;
+            animation-delay: 0;
+            @include textos($sizeh2, $letrah, $color3);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        p {
+            @extend .textoOnline;
+        }
+    }
+}
+
+    .principal {
+        display: flex;
+        align-items: center;
+        padding-left: 0.5rem;
+        padding-bottom: $medidaEstandar;
+
+        img {
+            border: 3px solid black
+        }
+
+        section {
+            h2 {
+                animation: flash;
+                animation-duration: 30s;
+                animation-delay: 0;
+                @include textos($sizeh2, $letrah, $color3);
+                text-align: center;
+                padding: 2rem;
+            }
+
+            p {
+                padding-left: $medidaEstandar;
+                @extend .textoOnline;
+            }
+
+            form label {
+                font-size: $sizeF;
+                padding-left: 1.5rem;
+
+                input {
+                    height: 1.1rem;
+                    border-radius: 1.3rem;
+                    border: 3px solid black;
+                    width: 300px;
+                }
+
+                textarea {
+                    height: 300px;
+                    border-radius: 1.2rem;
+                    border: 3px solid black;
+                    margin-left: 1.5rem;
+                    margin-top: $medidaEstandar;
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    .separado {
+        @include textos($sizeP, $letraP, black);
+    }
+
+    .reputacion {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .boton1 {
+        font-size: $medidaEstandar;
+        margin-left: 1.8rem;
+        margin-top: 0.5rem;
+        height: 2rem;
+        width: 10rem;
+        border-radius: 1.2rem;
+        border: 3px solid black;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            border: 3px solid red;
+        }
+    }
+
+    .mainEjercicios {
+        p {
+            padding-bottom: $medidaEstandar;
+            @extend .textoOnline;
+
+            a {
+                font-size: 2rem;
+                text-decoration: none;
+                color: $color1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            @include textos($sizeh1, $letrah, $color1);
+            padding: $medidaEstandar;
+        }
+    }
+
+    .ejerDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            @include textos($sizeh1, $letrah, $color1);
+            padding: $medidaEstandar;
+        }
+
+        img {
+            height: 300px;
+            width: 500px;
+            border: 3px solid #ad4a6c;
+            margin-bottom: $medidaEstandar;
+        }
+    }
+
+.mainContenido {
+    h1 {
+        @include textos($sizeh1, $letrah, $color1);
+        text-align: center;
+        padding: $medidaEstandar;
+    }
+}
+    .funciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.5rem;
+        padding-bottom: $medidaEstandar;
+
+        h2 {
+            animation: pulse;
+            animation-duration: 30s;
+            animation-delay: 0;
+            @include textos($sizeh2, $letrah, $color3);
+            text-align: center;
+
+        }
+
+        img {
+            height: 300px;
+            width: 350px;
+            border: 3px solid black
+        }
+    }
+
+    .mainFunciones {
+        display: flex;
+        align-items: center;
+
+        p {
+            padding-bottom: $medidaEstandar;
+            @extend .textoOnline;
+        }
+    }
+
+    .algebra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.5rem;
+        padding-bottom: $medidaEstandar;
+
+        h2 {
+            animation: flash;
+            animation-duration: 30s;
+            animation-delay: 0;
+            text-align: center;
+            @include textos($sizeh2, $letrah, $color3);
+        }
+    }
+
+    .mainAlgebra {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        p {
+            padding-bottom: $medidaEstandar;
+            @extend .textoOnline;
+        }
+    }
+
+    .algebra img {
+        height: 300px;
+        width: 350px;
+        border: 3px solid black
+    }
+
+    .mainHistoria {
+        h1 {
+            text-align: center;
+            @include textos($sizeh1, $letrah, $color1);
+            padding: $medidaEstandar;
+            animation: bounce;
+            animation-duration: 30s;
+            animation-delay: 0;
+        }
+
+        h2 {
+            animation: flash;
+            animation-duration: 30s;
+            animation-delay: 0;
+            @include textos($sizeh2, $letrah, $color3);
+            text-align: center;
+            padding-top: 2.5rem;
+
+            &:hover {
+                background-color: brown;
+                color: black
+            }
+        }
+
+        section h3 {
+            @include textos($sizeh3, $letrah, $color2);
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .div1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        img {
+            margin: $medidaEstandar;
+            height: 90%;
+            width: 90%;
+            border: 3px solid black
+        }
+
+        p {
+            padding-bottom: $medidaEstandar;
+            @extend .textoOnline;
+        }
+
+    }
+
+    .div2 {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin: 1rem;
+            height: 90%;
+            width: 90%;
+            border: 3px solid black
+        }
+
+        p {
+            margin-bottom: $medidaEstandar;
+            @extend .textoOnline;
+        }
+    }
+
+    .div3 {
+        display: flex;
+        align-items: center;
+        padding: $medidaEstandar;
+
+        p {
+            margin-bottom: $medidaEstandar;
+            @extend .textoOnline;
+        }
+
+        img {
+            margin: $medidaEstandar;
+            height: 60%;
+            width: 60%;
+            border: 3px solid black;
+        }
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "parrafo parrafo"
+            "formulario imagenes";
+        padding: 1rem;
+        gap: 1rem;
+
+        h2 {
+            animation: flash;
+            animation-duration: 30s;
+            animation-delay: 0;
+            grid-area: titulo;
+        }
+
+        p {
+            grid-area: parrafo;
+        }
+
+        form {
+            grid-area: formulario;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .imagenesgrid {
+        grid-area: imagenes;
+        display: flex;
+        justify-content: right;
+
+        img {
+            height: 35rem;
+            width: 35rem;
+        }
+    }
+
+    .imagenesflex {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            height: 15rem;
+            width: 30rem;
+            padding-left: 4rem;
+            padding-top: $medidaEstandar;
+        }
+    }
+
+    .formoak {
+        @include flex(flex, center, center);
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                margin: $medidaEstandar;
+                align-items: center;
+            }
+        }
+
+        img {
+            height: 35rem;
+            width: 30rem;
+        }
+
+    }
+
+    /* --------- Media Query ----------- */
+
+    @media(max-width: 1616px) {
+        .imagenesflex {
+            display: none
+        }
+
+        .imagenesgrid img {
+            height: 70%;
+            width: 100%
+        }
+    }
+
+    @media(max-width: 1024px) {
+        .mapa {
+            flex-direction: column
+        }
+
+        .vertical {
+            padding-bottom: 1.5rem;
+        }
+
+        .mainFunciones {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mainAlgebra {
+            flex-direction: column
+        }
+
+        .formoak {
+            width: 100%;
+        }
+
+        .formoak img {
+            display: none;
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .div1 {
+            flex-direction: column-reverse;
+        }
+
+        .div1 img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .div2 {
+            flex-direction: column-reverse;
+        }
+
+        .div2 img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .div3 {
+            flex-direction: column;
+        }
+    }
+
+
+    @media(max-width: 720px) {
+        .horizontal {
+            flex-direction: column;
+        }
+
+        .vertical iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mainObjetivo h1 {
+            font-size: 5rem;
+        }
+
+        @media(max-width: 540px) {
+            .header {
+                flex-direction: column;
+            }
+
+            .header nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem;
+            }
+
+            .ejerDiv img {
+                height: 90%;
+                width: 90%
+            }
+
+            .mainHistoria h1 {
+                padding-top: 15rem;
+            }
+
+        }
+
+        @media(max-width: 480px) {
+            .footer {
+                flex-direction: column;
+            }
+
+            .mainIndex h1 {
+                font-size: 50px;
+            }
+
+            .horizontal img {
+                width: 100%;
+            }
+
+            .horizontal {
+                padding: 0;
+            }
+
+            .display {
+                flex-direction: column;
+            }
+
+            .textoOnline {
+                padding: 2rem;
+            }
+
+            .ejerDiv h1 {
+                font-size: 3.5rem;
+            }
+
+            .mainContenido h1 {
+                font-size: 3.5rem;
+            }
+
+            .funciones img {
+                height: 95%;
+                width: 95%
+            }
+
+            .algebra img {
+                height: 80%;
+                width: 80%
+            }
+
+            .mainObjetivo h1 {
+                font-size: 3.5rem;
+            }
+
+            .indexSection h2 {
+                font-size: 2.8rem;
+                padding-bottom: 10rem;
+            }
+
+            .mainObjetivo section form label input {
+                width: 200px;
+            }
+
+            .mainHistoria h1 {
+                font-size: 4rem;
+            }
+
+            .mainHistoria section h2 {
+                font-size: 3.5rem
+            }
+
+            .textarea {
+                max-width: 220px
+            }
+        }
+    }
