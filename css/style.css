@@ -511,7 +511,6 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   width: 30rem;
 }
 
-/* --------- Media Query ----------- */
 @media (max-width: 1616px) {
   .imagenesflex {
     display: none;
