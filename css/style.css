@@ -7,8 +7,11 @@
 
 #navLetra {
   font-size: 2rem;
+  padding-left: 1rem;
+  color: #e9bd15;
 }
 #navLetra:hover {
+  color: colorNav;
   border: solid 2px black;
 }
 
@@ -148,10 +151,12 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   align-items: center;
   justify-content: right;
   background-color: #3d3d3d;
+  padding-right: 0.5rem;
+}
+.footer h4 {
   color: whitesmoke;
   font-size: 2rem;
   font-family: "Oleo Script Swash Caps", cursive;
-  padding-right: 0.5rem;
 }
 .footer a img {
   height: 70px;
@@ -160,6 +165,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   margin-left: 0.7rem;
   border: 2px solid black;
   margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .mainObjetivo h1 {
@@ -300,11 +306,12 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   flex-direction: column;
   align-items: center;
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
   padding-bottom: 1rem;
 }
 .funciones h2 {
-  -webkit-animation: pulse;
-          animation: pulse;
+  -webkit-animation: flash;
+          animation: flash;
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
   -webkit-animation-delay: 0;
@@ -333,6 +340,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   flex-direction: column;
   align-items: center;
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
   padding-bottom: 1rem;
 }
 .algebra h2 {
@@ -352,6 +360,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  margin-left: 0.6rem;
 }
 .mainAlgebra p {
   padding-bottom: 1rem;
@@ -502,7 +511,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   flex-direction: column;
   align-items: center;
 }
-.formoak form input {
+.formoak input {
   margin: 1rem;
   align-items: center;
 }
