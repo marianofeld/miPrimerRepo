@@ -90,7 +90,6 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
 
 .imgDisplay img {
   width: 100px;
-  height: 100px;
   border: 2px solid black;
 }
 
@@ -101,6 +100,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   padding-right: 1rem;
   flex-direction: column;
   width: 40%;
+  padding-left: 1rem;
 }
 .display2 h3 {
   font-size: 3.125rem;
@@ -298,15 +298,15 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   font-family: "Oleo Script Swash Caps", cursive;
   color: #e9bd15;
   text-align: center;
-  padding: 1rem;
+  padding: 4rem 4rem;
 }
 
 .funciones {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
   padding-bottom: 1rem;
 }
 .funciones h2 {
@@ -330,6 +330,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
 .mainFunciones {
   display: flex;
   align-items: center;
+  padding-right: 0.8rem;
 }
 .mainFunciones p {
   padding-bottom: 1rem;
@@ -339,9 +340,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  padding-bottom: 1rem;
+  padding-right: 3rem;
 }
 .algebra h2 {
   -webkit-animation: flash;
@@ -355,21 +354,22 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   font-family: "Oleo Script Swash Caps", cursive;
   color: beige;
 }
+.algebra img {
+  height: 300px;
+  width: 350px;
+  border: 3px solid black;
+}
 
 .mainAlgebra {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-left: 0.6rem;
+  padding-left: 0.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .mainAlgebra p {
   padding-bottom: 1rem;
-}
-
-.algebra img {
-  height: 300px;
-  width: 350px;
-  border: 3px solid black;
 }
 
 .mainHistoria h1 {
@@ -377,7 +377,8 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
   font-size: 5rem;
   font-family: "Oleo Script Swash Caps", cursive;
   color: #e9bd15;
-  padding: 1rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
   -webkit-animation: bounce;
           animation: bounce;
   -webkit-animation-duration: 30s;
@@ -541,8 +542,14 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
     align-items: center;
     justify-content: center;
   }
+  .funciones {
+    padding-bottom: 2rem;
+  }
   .mainAlgebra {
     flex-direction: column;
+  }
+  .algebra {
+    padding-bottom: 2rem;
   }
   .formoak {
     width: 100%;
@@ -597,9 +604,6 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
     height: 90%;
     width: 90%;
   }
-  .mainHistoria h1 {
-    padding-top: 15rem;
-  }
 }
 @media (max-width: 720px) and (max-width: 480px) {
   .footer {
@@ -624,7 +628,7 @@ main, #navLetra:hover, #carouselExampleControls, #card-group {
     font-size: 3.5rem;
   }
   .mainContenido h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .funciones img {
     height: 95%;
