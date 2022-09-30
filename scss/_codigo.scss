@@ -99,7 +99,6 @@ main {
 
 .imgDisplay img {
     width: 100px;
-    height: 100px;
     border: 2px solid black;
 }
 
@@ -108,6 +107,7 @@ main {
     padding-right: $medidaEstandar;
     flex-direction: column;
     width: 40%;
+    padding-left: $medidaEstandar;
 
     h3 {
         @include textos($sizeh3, $letrah, $color2);
@@ -312,7 +312,7 @@ main {
     h1 {
         @include textos($sizeh1, $letrah, $color1);
         text-align: center;
-        padding: $medidaEstandar;
+        padding: (4rem 4rem);
     }
 }
 
@@ -320,8 +320,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
     padding-bottom: $medidaEstandar;
 
     h2 {
@@ -342,6 +342,7 @@ main {
 .mainFunciones {
     display: flex;
     align-items: center;
+    padding-right: 0.8rem;
 
     p {
         padding-bottom: $medidaEstandar;
@@ -353,9 +354,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    padding-bottom: $medidaEstandar;
+    padding-right: 3rem;
 
     h2 {
         animation: flash;
@@ -364,13 +363,20 @@ main {
         text-align: center;
         @include textos($sizeh2, $letrah, $color3);
     }
+    img {
+        height: 300px;
+        width: 350px;
+        border: 3px solid black;
+    }
 }
 
 .mainAlgebra {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-left: 0.6rem;
+    padding-left: 0.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     p {
         padding-bottom: $medidaEstandar;
@@ -378,17 +384,12 @@ main {
     }
 }
 
-.algebra img {
-    height: 300px;
-    width: 350px;
-    border: 3px solid black
-}
-
 .mainHistoria {
     h1 {
         text-align: center;
         @include textos($sizeh1, $letrah, $color1);
-        padding: $medidaEstandar;
+        padding-bottom: 3rem;
+        padding-top:2rem;
         animation: bounce;
         animation-duration: 30s;
         animation-delay: 0;

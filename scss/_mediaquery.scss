@@ -23,9 +23,15 @@
         align-items: center;
         justify-content: center;
     }
+    .funciones{
+        padding-bottom: 2rem;
+    }
 
     .mainAlgebra {
-        flex-direction: column
+        flex-direction: column;
+    }
+    .algebra{ 
+        padding-bottom: 2rem;
     }
 
     .formoak {
@@ -95,10 +101,6 @@
             width: 90%
         }
 
-        .mainHistoria h1 {
-            padding-top: 15rem;
-        }
-
     }
 
     @media(max-width: 480px) {
@@ -131,7 +133,7 @@
         }
 
         .mainContenido h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
 
         .funciones img {
