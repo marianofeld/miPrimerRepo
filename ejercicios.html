@@ -51,29 +51,77 @@
             <h1>Ejercitacion de matemática</h1>
             <img src="./imagenes/apracticar.png" alt="A practicar">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet quasi dolorum dolore
-            dignissimos expedita molestias error inventore doloremque illum, vitae quos? Facere aspernatur deserunt odit
-            nobis quo magni culpa.</p><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente possimus ea aspernatur vero
-            dolorum libero odit repudiandae, minus magnam excepturi totam commodi neque officia, aliquam labore sed
-            necessitatibus consequuntur praesentium?</p>
-        <p>Para practicar ejercicios <strong> nivel secundario / ingreso a la universidad / terciario / universitario</strong> te
-            recomendamos la siguiente pagina <a
-                href="https://www.altillo.com/examenes/index.asp">Altillo</a></p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" id="fondo">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="fondo2">
+                        <p>Ejercicio N°1 Ecuaciones</p>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p> La distancia entre las ciudades A y B es de 50km. A la misma hora, salen un camión de la
+                            ciudad A a 60km/h y un ciclista de la ciudad B a 25km/h. Se desea calcular cuánto tardarán
+                            en encontrarse si ambos vehículos circulan por la misma carretera pero en sentido opuesto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" id="fondo">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button id="fondo2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <p>Ejercicio N°2 Inecuaciones</p>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p> Un juego consiste en lanzar un dado x veces. Si la diferencia entre el máximo y el mínimo
+                            puntaje que se puede obtener es mayor que x2+x. ¿Cuál es el máximo valor de x? </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" id="fondo">
+                <h2 class="accordion-header" id="headingThree">
+                    <button id="fondo2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <p>Ejercicio N°3 Derivadas</p>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Se quiere construir una caja sin tapa a partir de una hoja de cartón de 20x10cm. Para ello,
+                            se corta un cuadrado de lado L en cada esquina y se dobla la hoja levantando los cuatro
+                            laterales de la caja.
+                            Determinar las dimensiones de la caja para que su volumen sea máximo si el lado L debe medir
+                            entre 2 y 3 cm (2≤L≤3).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Para practicar ejercicios <strong> nivel secundario / ingreso a la universidad / terciario /
+                universitario</strong> te
+            recomendamos la siguiente pagina <a href="https://www.altillo.com/examenes/index.asp">Altillo</a></p>
     </main>
     <footer class="footer">
         <h4>Redes sociales:</h4>
         <div class="imgFooter">
-            <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/instagram.png" alt="instagram"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/instagram.png"
+                    alt="instagram"></a>
             <a href="https://www.facebook.com/" target="_blank"><img src="./imagenes/facebook.png" alt="facebook"></a>
             <a href="https://www.discord.com/" target="_blank"><img src="./imagenes/discord.png" alt="discord"></a>
         </div>
     </footer>
     <script src="js/wow.min.js"></script>
-        <script> new WOW().init();   </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <script> new WOW().init();   </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
