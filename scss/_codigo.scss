@@ -12,17 +12,29 @@
     justify-content: $justify;
 }
 
+.imagen404{
+    width: 100%;
+}
+
+#fondo{
+    @extend main
+}
+
+#fondo2{
+    background-color: map-get($map:$paleta, $key:'dos');
+}
+
 #navMio {
-    background-color: $colorNav;
+    background-color: map-get($map:$paleta, $key:'cuatro');
     align-items: center;
 }
 
 #navLetra {
     font-size: 2rem;
     padding-left: $medidaEstandar;
-    color: $color1;
+    color: map-get($map:$paleta, $key:'uno');
     &:hover {
-        color: colorNav;
+        color: map-get($map:$paleta, $key:'cuatro');
         @extend main;
         border: solid 2px black;
     }
@@ -51,7 +63,7 @@ main {
 }
 
 .mainIndex h1 {
-    @include textos($sizeh1, $letrah, $color1);
+    @include textos($sizeh1, $letrah, map-get($map:$paleta, $key:'uno'));
     text-align: center;
     padding: $medidaEstandar;
 }
@@ -88,7 +100,7 @@ main {
     animation-duration: 5s;
     animation-delay: 0;
     text-align: center;
-    @include textos($sizeh2, $letrah, $color3);
+    @include textos($sizeh2, $letrah, map-get($map:$paleta, $key:'tres'));
     padding-bottom: $medidaEstandar ;
 }
 
@@ -110,7 +122,7 @@ main {
     padding-left: $medidaEstandar;
 
     h3 {
-        @include textos($sizeh3, $letrah, $color2);
+        @include textos($sizeh3, $letrah, map-get($map:$paleta, $key:'dos'));
         text-align: center;
     }
 }
@@ -127,11 +139,11 @@ main {
     padding: 2rem;
 
     h3 {
-        @include textos($sizeh3, $letrah, $color2);
+        @include textos($sizeh3, $letrah, map-get($map:$paleta, $key:'dos'));
     }
 
     p {
-        @include textos($sizeP, $letraP, black);
+        @include textos($sizeP, $letraP, map-get($map:$paleta, $key:'seis'));
         padding-right: $medidaEstandar;
     }
 }
@@ -143,18 +155,18 @@ main {
     align-items: center;
 
     h3 {
-        @include textos($sizeh3, $letrah, $color2);
+        @include textos($sizeh3, $letrah, map-get($map:$paleta, $key:'dos'));
         text-align: center;
     }
 }
 
 .footer {
     @include flex(flex, center, right);
-    background-color: $colorNav;
+    background-color: map-get($map:$paleta, $key:'cuatro');
     padding-right: 0.5rem;
 
     h4{
-    color: whitesmoke;
+    color: map-get($map:$paleta, $key:'ocho');
     font-size: 2rem;
     font-family: $letrah;}
 
@@ -172,7 +184,7 @@ main {
 .mainObjetivo {
     h1 {
         text-align: center;
-        @include textos($sizeh1, $letrah, $color1);
+        @include textos($sizeh1, $letrah, map-get($map:$paleta, $key:'uno'));
         padding: 1rem;
     }
 
@@ -184,7 +196,7 @@ main {
             animation-duration: 30s;
             -webkit-animation-delay: 0;
             animation-delay: 0;
-            @include textos($sizeh2, $letrah, $color3);
+            @include textos($sizeh2, $letrah, map-get($map:$paleta, $key:'tres'));
             text-align: center;
             padding: 2rem;
         }
@@ -210,7 +222,7 @@ main {
             animation: flash;
             animation-duration: 30s;
             animation-delay: 0;
-            @include textos($sizeh2, $letrah, $color3);
+            @include textos($sizeh2, $letrah, map-get($map:$paleta, $key:'tres'));
             text-align: center;
             padding: 2rem;
         }
@@ -264,8 +276,8 @@ main {
     border: 3px solid black;
 
     &:hover {
-        background-color: black;
-        color: white;
+        background-color: map-get($map:$paleta, $key:'seis');
+        color: map-get($map:$paleta, $key:'cinco');
         border: 3px solid red;
     }
 }
@@ -278,13 +290,13 @@ main {
         a {
             font-size: 2rem;
             text-decoration: none;
-            color: $color1;
+            color: map-get($map:$paleta, $key:'uno');
         }
     }
 
     h1 {
         text-align: center;
-        @include textos($sizeh1, $letrah, $color1);
+        @include textos($sizeh1, $letrah, map-get($map:$paleta, $key:'uno'));
         padding: $medidaEstandar;
     }
 }
@@ -296,7 +308,7 @@ main {
 
     h1 {
         text-align: center;
-        @include textos($sizeh1, $letrah, $color1);
+        @include textos($sizeh1, $letrah, map-get($map:$paleta, $key:'uno'));
         padding: $medidaEstandar;
     }
 
@@ -310,7 +322,7 @@ main {
 
 .mainContenido {
     h1 {
-        @include textos($sizeh1, $letrah, $color1);
+        @include textos($sizeh1, $letrah, map-get($map:$paleta, $key:'uno'));
         text-align: center;
         padding: (4rem 4rem);
     }
@@ -328,7 +340,7 @@ main {
         animation: flash;
         animation-duration: 30s;
         animation-delay: 0;
-        @include textos($sizeh2, $letrah, $color3);
+        @include textos($sizeh2, $letrah, map-get($map:$paleta, $key:'tres'));
         text-align: center;
     }
 
@@ -361,7 +373,7 @@ main {
         animation-duration: 30s;
         animation-delay: 0;
         text-align: center;
-        @include textos($sizeh2, $letrah, $color3);
+        @include textos($sizeh2, $letrah, map-get($map:$paleta, $key:'tres'));
     }
     img {
         height: 300px;
@@ -387,7 +399,7 @@ main {
 .mainHistoria {
     h1 {
         text-align: center;
-        @include textos($sizeh1, $letrah, $color1);
+        @include textos($sizeh1, $letrah, map-get($map:$paleta, $key:'uno'));
         padding-bottom: 3rem;
         padding-top:2rem;
         animation: bounce;
@@ -399,18 +411,18 @@ main {
         animation: flash;
         animation-duration: 30s;
         animation-delay: 0;
-        @include textos($sizeh2, $letrah, $color3);
+        @include textos($sizeh2, $letrah, map-get($map:$paleta, $key:'tres'));
         text-align: center;
         padding-top: 2.5rem;
 
         &:hover {
-            background-color: brown;
-            color: black
+            background-color: map-get($map:$paleta, $key:'siete');
+            color: map-get($map:$paleta, $key:'seis')
         }
     }
 
     section h3 {
-        @include textos($sizeh3, $letrah, $color2);
+        @include textos($sizeh3, $letrah, map-get($map:$paleta, $key:'tres'));
         text-align: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
