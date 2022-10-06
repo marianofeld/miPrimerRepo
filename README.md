@@ -1,14 +1,22 @@
-# miPrimerRepo
-mi primer repo
+Clases particulares de matematica
 
-Trabajo 22/9
+Descripción
+Es un sitio en donde me ofrezco para dar servicio para enseñar matematica.
 
-Actualizaciones:
+Objetivo
+Crear tu sitio web para el curso de Desarrollo Web de Coderhouse.
 
-1) Modificacion de metas:
-a-Agrege los siguientes meta: keywords,description a cada uno de los html.
-b-modifique los titulos, ya que todas las paginas tenian el mismo.
+Librerías
+Bootstrap: facilidad para asignar estilos y obtener un diseño responsive.
 
-2)Agrege mixin's y extend al scss.
+WOW y animate: animaciones.
 
-Quiero agradecer a mi Tutor Juan Perrino por la buena onda que siempre le pone a las correciones como a las dudas que tuve a lo largo del curso.
+Aclaraciones:
+Al enviar los formularios abre la pagina del error 404 y de ahi podes volver a navegar.
+
+Agradacimientos:
+Laura Avalle: Profesora del curso Desarrollo Web.
+Juan Perrino: Tutor del curso Desarrollo Web.
+
+Autor:
+Desarrollado por Mariano Feld.
